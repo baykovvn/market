@@ -38,7 +38,7 @@ public class ListOfGoods {
     }
 
 
-       public String getFilteredList(String word) {
+    public String getFilteredList(String word) {
         StringBuilder result = new StringBuilder();
         for (Goods goods : listOfGoods) {
             if (goods.getName().contains(word)) {
