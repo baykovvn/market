@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class ListOfGoods {
-    private static ArrayList<Goods> listOfGoods = new ArrayList();
+    private static ArrayList<Goods> listOfGoods = new ArrayList<Goods>();
 
     public ListOfGoods() {
 
@@ -38,26 +38,7 @@ public class ListOfGoods {
     }
 
 
-    public Goods getGoods(int index) {   // Получение Объекта по индексу
-        Goods goods = listOfGoods.get(index);
-        return goods;
-    }
-
-    public int getGoogsLength() {
-        int length = listOfGoods.size();
-        return length;
-    }
-
-    public ArrayList<Goods> sortGoodsByPrice() {
-        //TODO
-        return null;
-    }
-
-    public int getSize() {
-        return listOfGoods.size();
-    }
-
-    public String getFilteredList(String word) {
+       public String getFilteredList(String word) {
         String result = "";
         for (Goods goods : listOfGoods) {
             if (goods.getName().contains(word)) {
