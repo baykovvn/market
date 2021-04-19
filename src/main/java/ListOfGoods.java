@@ -39,13 +39,13 @@ public class ListOfGoods {
 
 
        public String getFilteredList(String word) {
-        String result = "";
+        StringBuilder result = new StringBuilder();
         for (Goods goods : listOfGoods) {
             if (goods.getName().contains(word)) {
-                result = result + " \n " + goods.toString();
+                result.append(" \n ").append(goods.toString());
             }
         }
-        return result;
+        return result.toString();
     }
 
     public void getGoodsRank() {
@@ -60,11 +60,11 @@ public class ListOfGoods {
 
     @Override
     public String toString() {
-        String result = "";
+        StringBuilder result = new StringBuilder();
         for (Goods goods : listOfGoods) {
-            result = result + " \n " + goods.toString();
+            result.append(" \n ").append(goods.toString());
         }
-        return result;
+        return result.toString();
     }
 
 }

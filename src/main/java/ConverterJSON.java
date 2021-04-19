@@ -8,12 +8,12 @@ public class ConverterJSON implements JsonSerializer<Goods>, JsonDeserializer<Go
     public Goods deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws JsonParseException {
         JsonObject object = json.getAsJsonObject();
         String name = object.get("name").getAsString();
-        Integer count = object.get("count").getAsInt();
-        Float price = object.get("price").getAsFloat();
-        Integer weight = object.get("weight").getAsInt();
-        Integer fat = object.get("fat").getAsInt();
-        Integer rating = object.get("rating").getAsInt();
-        Integer goodsNumber = object.get("goodsNumber").getAsInt();
+        int count = object.get("count").getAsInt();
+        float price = object.get("price").getAsFloat();
+        int weight = object.get("weight").getAsInt();
+        int fat = object.get("fat").getAsInt();
+        int rating = object.get("rating").getAsInt();
+        int goodsNumber = object.get("goodsNumber").getAsInt();
         return new Goods(name, count, price, weight, fat, rating, goodsNumber);
     }
 
