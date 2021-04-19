@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Молоко  Деревенское",
+    "count": 20,
+    "price": 98,
+    "weight": 930,
+    "fat": 3,
+    "rating": 2,
+    "goodsNumber": 100
+  },
+  {
+    "name": "Молоко  Козье",
+    "count": 10,
+    "price": 199,
+    "weight": 750,
+    "fat": 5,
+    "rating": 1,
+    "goodsNumber": 101
+  },
+  {
+    "name": "Молоко  Фермерское",
+    "count": 20,
+    "price": 250,
+    "weight": 2400,
+    "fat": 3,
+    "rating": 0,
+    "goodsNumber": 102
+  },
+  {
+    "name": "Молоко  Классическое",
+    "count": 20,
+    "price": 78,
+    "weight": 910,
+    "fat": 2,
+    "rating": 6,
+    "goodsNumber": 103
+  }
+]
