@@ -14,13 +14,10 @@ public class Main {
      - Вывод доступных для покупки товаров
      - Фильтрация товаров по ключевым словам, ценам, производителям
      - Составление продуктовой корзины пользователя
-     - Трекинг заказа в системе доставки
-     - Возврат заказа, повтороение заказа
      - Система рейтинга для товаров
-     - Простая рекомендательная система для покупок
+     - сориторвка товаров по цене и по рейтингу
 
-     Формат БД (JSON) с товарами магазина Фермерских продуктов.
-
+     Товары хранятся в БД (JSON)
 
      */
 
@@ -149,12 +146,12 @@ public class Main {
 
     private static String readUsingScanner(String fileName) throws IOException {
         Scanner scanner = new Scanner(Paths.get(fileName));//, StandardCharsets.UTF_8.name());
-        String JsonData = "";
+        StringBuilder JsonData = new StringBuilder();
         while (scanner.hasNext()) {
-            JsonData = JsonData + scanner.next();
+            JsonData.append(scanner.next());
         }
         scanner.close();
         //System.out.println(JsonData);
-        return JsonData;
+        return JsonData.toString();
     }
 }
